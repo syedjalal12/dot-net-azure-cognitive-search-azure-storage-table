@@ -10,7 +10,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCors(p => p.AddPolicy("angularCorsPolicy", build =>
 {
     build.WithOrigins("http://localhost:4200", "https://localhost:4200").AllowAnyMethod().AllowAnyHeader();
-}))
+}));
 
 var app = builder.Build();
 
